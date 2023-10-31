@@ -26,5 +26,5 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   captionsData: 'alt',
   fadeSpeed: 250,
-  rtl: true,
+  close: false,
 });
