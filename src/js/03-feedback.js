@@ -11,3 +11,5 @@ const saveState = () => {
   };
   localStorage.setItem('feedback-form-state', JSON.stringify(state));
 };
+
+console.log(state);
