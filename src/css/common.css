@@ -10,47 +10,8 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
-  background: linear-gradient(-45deg, blue, yellow);
-  background-size: 400% 200%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
-}
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 img {
   display: block;
   max-width: 100%;
@@ -62,6 +23,6 @@ iframe {
   transform: translate(-50%, -50%);
 }
 form {
-  margin: auto; /* Встановлює відступи з усіх сторін */
-  width: 50%; /* Встановлює ширину форми */
+  margin: auto;
+  width: 50%;
 }

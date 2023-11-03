@@ -5,6 +5,7 @@ import { galleryItems } from './gallery-items';
 // Change code below this line
 const galleryElements = document.querySelector('.gallery');
 
+// Формуємо розмітку галереї на основі масиву даних
 const createGalleryMarkup = galleryItems => {
   return galleryItems
     .map(({ preview, original, description }) => {
@@ -26,5 +27,4 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   captionsData: 'alt',
   fadeSpeed: 250,
-  close: false,
 });
