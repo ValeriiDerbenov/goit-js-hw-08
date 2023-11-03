@@ -1,8 +1,14 @@
 import throttle from 'lodash.throttle';
+// import { saveToLS, loadFromLS } from './helper';
 
 const form = document.querySelector('.feedback-form');
 const emailInput = form.querySelector('input[name="email"]');
 const messageInput = form.querySelector('textarea[name="message"]');
+// const state = {
+//   email: emailInput.value,
+//   message: messageInput.value,
+// };
+// saveToLS('feedback-form-state', JSON.stringify(state));
 
 const saveState = () => {
   const state = {
@@ -34,7 +40,8 @@ const submitForm = event => {
   emailInput.value = '';
   messageInput.value = '';
 };
-
+// emailInput.addEventListener('input', throttle(saveToLS, 500));
+// messageInput.addEventListener('input', throttle(saveToLS, 500));
 emailInput.addEventListener('input', throttle(saveState, 500));
 messageInput.addEventListener('input', throttle(saveState, 500));
 form.addEventListener('submit', submitForm);
